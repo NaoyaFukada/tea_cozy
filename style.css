@@ -1,0 +1,222 @@
+*, html, body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica;
+    font-size: 22px;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 69px;
+    border-bottom: 1px solid seashell;
+    opacity: 0.9;
+    z-index: 999;
+}
+
+.logo {
+    height: 50px;
+    padding-left: 10px;
+    opacity: 0.9;
+}
+
+header ul {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    list-style: none;
+    padding-right: 10px;
+}
+
+header a {
+    color: seashell;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mission {
+    padding-top: 69px;
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    height: 769px;
+}
+
+#mission .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-image: url('img/background.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.headings {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.headings h2 {
+    line-height: 60px;
+    opacity: 0.9;
+}
+
+.headings h4 {
+    line-height: 50px;
+    opacity: 0.9;
+}
+
+#featured-tea {
+    width: 1000px;
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#featured-tea h2 {
+    line-height: 80px;
+    opacity: 0.9;
+}
+
+#featured-tea h4 {
+    opacity: 0.9;
+}
+
+#featured-tea .cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 30px 0;
+    opacity: 0.9;
+}
+
+#featured-tea .card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#featured-tea .card img {
+    width: 300px;
+    height: 200px;
+}
+
+#locations {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    width: 1200px;
+}
+
+#locations .container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    height: 100%;
+    width: 100%;
+}
+
+#locations .container::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    height: 500px;
+    width: 1200px;
+    background-image: url('img/locations.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -10;
+    opacity: 0.9;
+}
+
+#locations .cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+#locations .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    background-color: black;
+    width: 300px;
+    opacity: 1;
+    padding: 20px;
+    opacity: 1;
+}
+
+#locations ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+#locations ul li {
+    list-style: none;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.upper {
+    padding: 15px 0;
+    height: 200px;
+    text-align: center;
+}
+
+footer .contents {
+    padding: 30px 0;
+}
+
+footer .contents h5 {
+    padding: 15px;
+}
+
+.down {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
